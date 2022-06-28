@@ -4,6 +4,7 @@ import Home from './Components/Pages/Home';
 import About from './Components/Pages/About';
 import Contact from './Components/Pages/Contact';
 import Projects from './Components/Pages/Projects';
+import ErrorPage from './Components/Pages/ErrorPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/projects' element={<Projects />} />
+        <Route path='*' element={<ErrorPage />} />
       </Routes>
     </Router>
   );
